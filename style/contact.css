@@ -1,0 +1,60 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.contact p {
+   padding: 20px;
+}
+
+.contact input {
+   width: 100%;
+   border: 3px #777 solid;
+   padding: 17px;
+   font-size: 1.5em;
+   border-radius: 2px;
+   margin-bottom: 10px;
+}
+
+.mss {
+   margin: 20px;
+   display: block;
+   margin: auto;
+   border: none;
+   font-size: 250%;
+   border-radius: 5px;
+   color: #fff;
+   background: #5b8cff;
+   padding: 2% 5%;
+   margin-bottom: 20px;
+}
+.mss:hover{
+   background: #316cf7;
+}
+a {
+   text-decoration: none;
+}
+
+.map {
+   width: 100%;
+   padding: 10px;
+}
+footer{
+   width: 100%;
+   background: #444;
+   color: #fff;
+   font-size: 2em;
+   height: 20vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+::-webkit-scrollbar{
+   width: 7px;
+   background: #fff;
+}
+::-webkit-scrollbar-thumb{
+   background: #444;
+}

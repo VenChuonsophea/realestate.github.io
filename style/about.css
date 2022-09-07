@@ -1,0 +1,72 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.about h1 {
+   margin-top: 20px;
+}
+
+.about p {
+   padding: 0 15px;
+   text-align: justify;
+   font-size: 1.3em;
+}
+
+/* profile */
+.profile {
+   float: left;
+   border-radius: 3px;
+   overflow: hidden;
+   background: #fffbfb;
+   margin: 1%;
+   width: 23%;
+   box-shadow: 3px 3px 3px #ccc;
+   transition: .5s;
+   cursor: pointer;
+}
+
+.profile:hover {
+   transform: scale(1.025);
+}
+
+.profile h1 {
+   margin: 0;
+}
+
+.profile h2 {
+   margin: -10px 0 5px 15px;
+   color: gray;
+}
+
+.profile button {
+   width: 100%;
+   margin-top: 10px;
+   font-size: 1.5em;
+   padding: 10px;
+   margin: auto;
+   background: #b0b0b0;
+   border: none;
+   border-radius: 5px;
+}
+
+.profile button:hover {
+   background: #777;
+}
+
+@media (max-width:850px) {
+   .profile {
+      width: 45%;
+      margin-left: 2%;
+   }
+}
+
+@media (max-width:470px) {
+   .profile {
+      width: 95%;
+      margin-left: 2%;
+      margin-bottom: 2%;
+   }
+}

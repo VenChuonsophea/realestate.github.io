@@ -1,0 +1,93 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 5px;
+   background: #fff;
+   z-index: 5;
+}
+
+.menu li {
+   list-style: none;
+   padding: 15px;
+   transition: .5s
+}
+
+.menu li:hover {
+   background: #77777747;
+}
+
+.menu li:first-child {
+   float: left;
+}
+
+.menu li:first-child~li {
+   float: right;
+}
+
+.menu li:nth-child(2) {
+   display: none;
+}
+
+@media (max-width:620px) {
+   .menu li:nth-child(4),.menu li:nth-child(3),.menu li:last-child{
+      display: none;
+   }
+   .menu li:nth-child(2) {
+      display: inline;
+   }
+}
+
+.menu li a {
+   letter-spacing: 3px;
+   color: #000;
+   text-decoration: none;
+   list-style: none;
+   font-size: 1.3em;
+}
+
+/* banner */
+.banner {
+   width: 100%;
+   height: 100vh;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.cover {
+   transition: .5s;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.banner:hover .cover {
+   filter: blur(4px);
+}
+
+.br {
+   background: rgb(59, 59, 59);
+   padding: 15px;
+}
+
+.br, .ar {
+   display: inline;
+}
+
+.text {
+   color: #fff;
+   font-size: 2em;
+   position: absolute;
+   z-index: 2;
+}
